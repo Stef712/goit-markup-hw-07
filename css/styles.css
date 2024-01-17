@@ -6,6 +6,8 @@
   --white-color: #f4f4fd;
   --global-transition: cubic-bezier(0.4, 0, 0.2, 1);
   --main-color: #ffffff;
+  --vertical-padding: 96px;
+  --horizontal-padding: 16px;
 }
 
 h1,
@@ -32,9 +34,10 @@ body {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1400px;
+  /* max-width: 1158px; */
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
 }
 
@@ -110,8 +113,8 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 
 /* Header Section */
@@ -189,9 +192,10 @@ body {
 }
 
 .header-menu-list {
-  display: flex;
+  /* display: flex; */
+  /* padding: 24px 0; */
+  display: none;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .logo-list {
@@ -214,8 +218,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
 }
 
 .main-title {
@@ -258,12 +262,12 @@ body {
 /* Features Section */
 
 .features-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .features-subtitle {
@@ -271,7 +275,8 @@ body {
 }
 
 .features-icon {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: var(--white-color);
@@ -299,6 +304,10 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
+.what-container {
+  display: none;
+}
+
 /* Team Section */
 
 .team {
@@ -306,11 +315,12 @@ body {
 }
 
 .team-members {
+  width: fit-content;
   background-color: var(--main-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .team-title {
@@ -318,7 +328,7 @@ body {
 }
 
 .team-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
   justify-content: center;
 }
@@ -334,7 +344,7 @@ body {
 }
 
 .team-wrap {
-  padding: 32px 0px;
+  /* padding: 32px 0px; */
 }
 
 .team-social-link {
@@ -357,6 +367,10 @@ body {
   fill: var(--white-color);
 }
 
+.icon-list {
+  display: flex;
+}
+
 /* Customers Section */
 
 .customers-title {
@@ -366,16 +380,17 @@ body {
 .customers-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .customers-item {
-  height: 88px;
-  width: calc((100% - 120px) / 6);
+  /* height: 88px;
+  width: calc((100% - 120px) / 6); */
 }
 
 .customers-section {
   display: flex;
-  padding: 120px 0;
+  /* padding: 120px 0; */
 }
 
 .customers-link {
@@ -512,8 +527,8 @@ body {
 
 .footer {
   background-color: var(--title-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 
 .footer-text {
@@ -576,7 +591,7 @@ body {
 }
 
 .footer-container {
-  display: flex;
+  /* display: flex; */
   align-items: baseline;
 }
 
@@ -595,7 +610,7 @@ body {
 }
 
 .footer-form {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 24px;
 }
@@ -661,7 +676,7 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms var(--global-transition),
     visibility 250ms var(--global-transition);
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
 }
 
 .is-hidden {
@@ -675,7 +690,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -683,6 +698,7 @@ body {
   border-radius: 4px;
   padding: 24px 24px 24px 24px;
   transition: transform 250ms var(--global-transition);
+  margin-left: -9px;
 }
 
 .backdrop.is-hidden .modal {
@@ -865,5 +881,15 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office-work@2x.jpg);
+  }
+}
+
+@media screen and (width >= 768px) {
+}
+
+@media screen and (width >= 1158px) {
+  :root {
+    --vertical-padding: 120px;
+    --horizontal-padding: 156px;
   }
 }
