@@ -35,9 +35,6 @@ body {
 
 .container {
   max-width: 1400px;
-  /* max-width: 1158px; */
-  /* padding-left: 15px;
-  padding-right: 15px; */
   margin: 0 auto;
 }
 
@@ -93,12 +90,6 @@ body {
   letter-spacing: 0.72px;
   word-wrap: break-word;
   text-align: center;
-
-  /* font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-   */
 }
 
 .text {
@@ -124,8 +115,6 @@ body {
 
 .section {
   padding: var(--vertical-padding) 8px;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 
 /* Header Section */
@@ -206,23 +195,14 @@ body {
 
 .header-menu-address {
   display: none;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px; */
 }
 
 .header-menu-list {
-  /* display: flex; */
-  /* padding: 24px 0; */
   display: none;
   gap: 40px;
 }
 
 .logo-list {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
   display: inline-block;
 }
 
@@ -247,8 +227,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
 }
 
 .main-title {
@@ -261,13 +239,6 @@ body {
   word-wrap: break-word;
   padding: 112px 27px 72px 27px;
   text-align: center;
-
-  /* line-height: 1.07;
-  letter-spacing: 1.12px;
-  word-wrap: break-word;
-  text-align: center;
-  max-width: 496px;
-  margin: 0 auto 48px; */
 }
 
 .main-button {
@@ -298,12 +269,7 @@ body {
 /* Features Section */
 
 .features-list {
-  /* display: flex; */
   gap: 24px;
-}
-
-.features-item {
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .features-subtitle {
@@ -440,12 +406,10 @@ body {
   width: 190px;
   height: 88px;
   margin-bottom: 72px;
-  /* width: calc((100% - 120px) / 6); */
 }
 
 .customers-section {
   display: flex;
-  /* padding: 120px 0; */
 }
 
 .customers-link {
@@ -582,8 +546,6 @@ body {
 
 .footer {
   background-color: var(--title-color);
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
 }
 
 .footer-text {
@@ -608,7 +570,6 @@ body {
   justify-content: center;
   padding-top: 96px;
   margin-bottom: 72px;
-  /* margin-right: 120px; */
 }
 
 .social-media {
@@ -662,7 +623,6 @@ body {
 }
 
 .footer-container {
-  /* display: flex; */
   align-items: baseline;
 }
 
@@ -692,6 +652,7 @@ body {
   justify-content: center;
   gap: 16px;
 }
+
 .footer-input {
   width: 398px;
   height: 40px;
@@ -701,7 +662,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  /* margin-right: 24px; */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--main-color);
@@ -740,8 +700,6 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
-  /* margin-bottom: 4px;
-  margin-right: 24px; */
 }
 
 /* Modal */
@@ -755,7 +713,6 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms var(--global-transition),
     visibility 250ms var(--global-transition);
-  /* padding: 72px 24px 24px 24px; */
 }
 
 .is-hidden {
@@ -970,7 +927,6 @@ body {
 
   .header-menu-list {
     display: flex;
-    /* padding: 24px 0; */
     gap: 40px;
   }
 
@@ -1038,11 +994,11 @@ body {
   }
 
   .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 
   .footer-contact {
     align-items: start;
@@ -1067,14 +1023,79 @@ body {
   .footer-input {
     width: 264px;
   }
-
 }
-
-/* Mai trebuie sa fac resize pentru PC, sa completez meniul-hamburger si sa il fac utilizabil pe toate tipurile de view */
-
+  
 @media screen and (width >= 1158px) {
   :root {
     --vertical-padding: 120px;
     --horizontal-padding: 156px;
   }
+
+  .header-menu-address{
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .main-background {
+    height: 600px;
+  }
+
+  .main-title {
+    padding: 188px 300px 48px 300px;
+  }
+
+  .features-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+
+  .what-container {
+    display: block;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .customers-item {
+    width: 168px;
+    height: 88px;
+    margin-bottom: 120px;
+  }
+
+  .customers-title {
+    margin-top: 120px;
+  }
+
+  .footer-desktop {
+    padding-left: 40px;
+    padding-top: 100px;
+  }
 }
+
+/* Mai trebuie sa completez meniul-hamburger si sa il fac utilizabil pe telefon */
