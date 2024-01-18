@@ -1070,6 +1070,8 @@ body {
 
 }
 
+/* Mai trebuie sa fac resize pentru PC, sa completez meniul-hamburger si sa il fac utilizabil pe toate tipurile de view */
+
 @media screen and (width >= 1158px) {
   :root {
     --vertical-padding: 120px;
