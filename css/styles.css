@@ -120,7 +120,6 @@ body {
 /* Header Section */
 
 .header-links {
-  /* color: var(--hover-color); */
   color: var(--title-color);
   font-size: 16px;
   font-weight: 500;
@@ -211,11 +210,6 @@ body {
   border: none;
   cursor: pointer;
 }
-
-/* .menu-phone {
-  display: flex;
-  flex-direction: column;
-} */
 
 /* Main Section */
 
@@ -659,7 +653,7 @@ body {
 }
 
 .footer-input {
-  width: 398px;
+  width: 300px;
   height: 40px;
   border: 1px solid var(--main-color);
   background-color: transparent;
@@ -1038,11 +1032,6 @@ font-style: normal;
   background-color: var(--hover-color);
 }
 
-/* .close-menu {
-  display: none;
-} */
-
-
 /* Resize */
 
 @media (min-device-pixel-ratio: 2),
@@ -1061,15 +1050,6 @@ font-style: normal;
   .menu-hamburger {
     display: none;
   }
-
-  /* .menu-icons {
-    display: none;
-  } */
-
-  /* .meu-phone {
-  display: flex;
-  flex-direction: row;
-} */
 
   .header-menu-list {
     display: flex;
@@ -1243,6 +1223,3 @@ font-style: normal;
     padding-top: 100px;
   }
 }
-
-/* Mai trebuie sa completez meniul-hamburger si sa il fac utilizabil pe telefon */
-
