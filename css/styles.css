@@ -212,6 +212,11 @@ body {
   cursor: pointer;
 }
 
+/* .menu-phone {
+  display: flex;
+  flex-direction: column;
+} */
+
 /* Main Section */
 
 .main-background {
@@ -741,6 +746,10 @@ body {
   transform: translate(-50%, -50%) scaleY(0);
 }
 
+.modal-close-icon {
+  transition: fill 250ms var(--global-transition);
+}
+
 .modal-close-btn {
   position: absolute;
   top: 24px;
@@ -758,10 +767,6 @@ body {
   cursor: pointer;
   transition: background-color 250ms var(--global-transition),
     border 250ms var(--global-transition);
-}
-
-.modal-close-icon {
-  transition: fill 250ms var(--global-transition);
 }
 
 .modal-close-btn:hover,
@@ -906,6 +911,138 @@ body {
   height: 56px;
 }
 
+/* Menu Phone */
+
+.hidden {
+  visibility: hidden;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--main-color);
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  padding-left: 40px;
+}
+
+.menu-mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 80px;
+  margin-bottom: 284px;
+}
+
+.menu-address {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.menu-mobile-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--global-transition);
+}
+
+.menu-mobile-social-link:hover,
+.menu-mobile-social-link:focus {
+  background-color: var(--hover-color);
+}
+
+.menu-mobile-social-list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  margin-bottom: 40px;
+}
+
+.menu-mobile-text {
+color: var(--title-color);
+font-size: 36px;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 40px;
+letter-spacing: 0.72px;
+word-wrap: break-word;
+transition: color 250ms var(--global-transition);
+}
+
+.menu-mobile-text:hover,
+.menu-mobile-text:focus {
+  color: var(--hover-color);
+}
+
+.menu-mobile-phone-number {
+color: var(--title-color);
+font-size: 36px;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 40px;
+letter-spacing: 0.72px;
+word-wrap: break-word;
+font-style: normal;
+transition: color 250ms var(--global-transition);
+}
+
+.menu-mobile-phone-number:hover,
+.menu-mobile-phone-number:focus {
+  color: var(--accent-color);
+}
+
+.menu-mobile-info {
+color: var(--text-color);
+font-size: 20px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.40px;
+word-wrap: break-word;
+transition: color 250ms var(--global-transition);
+font-style: normal;
+}
+
+.menu-mobile-info:hover,
+.menu-mobile-info:focus {
+  color: var(--hover-color);
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms var(--global-transition),
+    border 250ms var(--global-transition);
+}
+
+.menu-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--hover-color);
+}
+
+/* .close-menu {
+  display: none;
+} */
+
+
 /* Resize */
 
 @media (min-device-pixel-ratio: 2),
@@ -924,6 +1061,15 @@ body {
   .menu-hamburger {
     display: none;
   }
+
+  /* .menu-icons {
+    display: none;
+  } */
+
+  /* .meu-phone {
+  display: flex;
+  flex-direction: row;
+} */
 
   .header-menu-list {
     display: flex;
@@ -1099,3 +1245,4 @@ body {
 }
 
 /* Mai trebuie sa completez meniul-hamburger si sa il fac utilizabil pe telefon */
+
