@@ -911,6 +911,18 @@ body {
   visibility: hidden;
 }
 
+.logo-mobile {
+font-size: 36px;
+font-weight: 800;
+text-transform: uppercase;
+line-height: 40px;
+letter-spacing: 0.72px;
+word-wrap: break-word;
+transition: color 250ms var(--global-transition);
+padding-top: 24px;
+color: var(--accent-color);
+}
+
 .menu-mobile {
   display: flex;
   flex-direction: column;
@@ -920,7 +932,8 @@ body {
   right: 0;
   left: 0;
   height: 100vh;
-  padding-left: 40px;
+  align-items: center;
+  /* padding-left: 40px; */
 }
 
 .menu-mobile-nav-list {
@@ -928,7 +941,7 @@ body {
   flex-direction: column;
   gap: 40px;
   padding-top: 80px;
-  margin-bottom: 284px;
+  margin-bottom: 190px;
 }
 
 .menu-address {
@@ -1047,6 +1060,11 @@ font-style: normal;
 }
 
 @media screen and (width >= 768px) {
+  
+  .menu-mobile {
+    display: none;
+  }
+  
   .menu-hamburger {
     display: none;
   }
