@@ -1102,7 +1102,7 @@ font-style: normal;
   .portfolio-card-list {
     column-gap: 24px;
     row-gap: 72px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .menu-mobile {
