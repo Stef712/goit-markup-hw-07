@@ -25,6 +25,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -466,15 +467,34 @@ body {
 }
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px var(--horizontal-padding);
+}
+
+.subtitle-porfolio {
+color: var(--title-color);
+font-size: 20px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.40px;
+word-wrap: break-word;
+}
+
+.portfolio-text {
+color: var(--text-color);
+font-size: 16px;
+font-family: Roboto;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.32px;
+word-wrap: break-word;
 }
 
 .portfolio-buttons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .portfolio-card-subtitle {
@@ -486,6 +506,8 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-card-text {
@@ -1060,7 +1082,29 @@ font-style: normal;
 }
 
 @media screen and (width >= 768px) {
-  
+  .portfolio-card {
+    width: 356px;
+  }
+
+  .portfolio {
+    padding: 64px 7px;
+  }
+
+  .portfolio-buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-card-list {
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: flex-start;
+  }
+
   .menu-mobile {
     display: none;
   }
